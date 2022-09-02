@@ -15,7 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: sync branches
+      - name: Sync branches
         run: |
-          git checkout main-2
-          git rebase main
+          git push --force origin main-2
